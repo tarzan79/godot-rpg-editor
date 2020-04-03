@@ -1,0 +1,106 @@
+[gd_scene format=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FileDialog" type="FileDialog" parent="."]
+margin_left = 135.0
+margin_top = 75.0
+margin_right = 487.0
+margin_bottom = 435.0
+window_title = "Ouvrir un fichier"
+mode = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FileDialog2" type="FileDialog" parent="."]
+margin_left = 135.0
+margin_top = 75.0
+margin_right = 487.0
+margin_bottom = 435.0
+window_title = "Ouvrir un fichier"
+mode = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 375.0
+margin_bottom = 135.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 196.0
+margin_bottom = 55.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+margin_right = 313.0
+margin_bottom = 14.0
+text = "Base de donnée SQLite"
+
+[node name="VSplitContainer" type="VSplitContainer" parent="Panel/VBoxContainer"]
+margin_top = 18.0
+margin_right = 313.0
+margin_bottom = 28.0
+rect_min_size = Vector2( 0, 10 )
+custom_constants/separation = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_top = 32.0
+margin_right = 313.0
+margin_bottom = 56.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer"]
+margin_top = 5.0
+margin_right = 120.0
+margin_bottom = 19.0
+rect_min_size = Vector2( 120, 0 )
+text = "Base de donnée"
+
+[node name="LineEdit" type="LineEdit" parent="Panel/VBoxContainer/HBoxContainer"]
+margin_left = 124.0
+margin_right = 274.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 150, 0 )
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer/HBoxContainer"]
+margin_left = 278.0
+margin_right = 313.0
+margin_bottom = 24.0
+text = "File"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/VBoxContainer"]
+margin_top = 60.0
+margin_right = 313.0
+margin_bottom = 84.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer2"]
+margin_top = 5.0
+margin_right = 120.0
+margin_bottom = 19.0
+rect_min_size = Vector2( 120, 0 )
+text = "Driver  sqlite"
+
+[node name="LineEdit" type="LineEdit" parent="Panel/VBoxContainer/HBoxContainer2"]
+margin_left = 124.0
+margin_right = 274.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 150, 0 )
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer/HBoxContainer2"]
+margin_left = 278.0
+margin_right = 313.0
+margin_bottom = 24.0
+text = "File"
